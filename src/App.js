@@ -1,9 +1,16 @@
 import logo from './logo.svg';
 import './App.css';
 import { Route, Switch } from 'react-router';
+import Home from './Pages/Home/Home';
+import About from './Pages/About/About';
+import Service from './Pages/Services/Service';
+import Involve from './Pages/Involve/Involve';
+import Footer from './Components/Footer/Footer';
+
+
 
 function App() {
-  return (
+  return ( <>
     <Switch>
       <Route path='/Bald'>
     <div className="App">
@@ -23,7 +30,15 @@ function App() {
       </header>
     </div>
     </Route>
-    </Switch>
+    <Route path='/'>
+    <Home/>
+    <About/>
+    <Service/>
+    <Involve/>
+      </Route>
+      </Switch>
+    <Footer/>
+    </>
   );
 }
 
