@@ -6,36 +6,51 @@ import About from './Pages/About/About';
 import Service from './Pages/Services/Service';
 import Involve from './Pages/Involve/Involve';
 import Footer from './Components/Footer/Footer';
-
-
+import Contact from './Pages/Contact/Contact';
+import BoardOfDirectors from './Pages/BoardOfDirectors/BoardOfDirectors';
+import Staff from './Pages/Staff/Staff';
+import Partners from './Pages/Partners/Partners';
+import { Navigation } from './Components/Navigation/Navigation';
 
 function App() {
+  const paths = [
+    {name: 'Home', to:''},
+    {name: 'About', to:'about'},
+    {name: 'Board of Directors', to:'boardofdirectors'},
+    {name: 'Contact', to:'contact'},
+    {name: 'Involve', to:'involve'},
+    {name: 'Partners', to:'partners'},
+    {name: 'Service', to:'service'},
+    {name: 'Staff', to:'staff'},
+    ]
+
   return ( <>
+    <Route render={(routerProps) => <Navigation paths={paths} nav={routerProps.location}/>}/>
     <Switch>
-      <Route path='/Bald'>
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-    </Route>
-    <Route path='/'>
-    <Home/>
-    <About/>
-    <Service/>
-    <Involve/>
-      </Route>
+        <Route path='/about'>
+          <About/>
+        </Route>
+        <Route path='/service'>
+          <Service/>
+        </Route>
+        <Route path='/involve'>
+          <Involve/>
+        </Route>
+        <Route path='/contact'>
+          <Contact/>
+        </Route>
+        <Route path='/boardofdirectors'>
+          <BoardOfDirectors/>
+        </Route>
+        <Route path='/staff'>
+          <Staff/>
+        </Route>
+        <Route path='/partners'>
+          <Partners/>
+        </Route>
+        <Route path='/'>
+          <Home/>
+        </Route>
       </Switch>
     <Footer/>
     </>
