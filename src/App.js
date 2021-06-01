@@ -3,7 +3,7 @@ import './App.css';
 import { Route, Switch } from 'react-router';
 import Home from './Pages/Home/Home';
 import About from './Pages/About/About';
-import Service from './Pages/Services/Service';
+import Services from './Pages/Services/Services';
 import Involve from './Pages/Involve/Involve';
 import Footer from './Components/Footer/Footer';
 import Contact from './Pages/Contact/Contact';
@@ -20,18 +20,20 @@ function App() {
     {name: 'Contact', to:'contact'},
     {name: 'Involve', to:'involve'},
     {name: 'Partners', to:'partners'},
-    {name: 'Service', to:'service'},
+    {name: 'Services', to:'services'},
     {name: 'Staff', to:'staff'},
-    ]
+    ];
+    const realPaths = [{name: 'About', to:'about'},{name: 'Services', to:'services'},{name: 'Contact', to:'contact'}]
 
-  return ( <>
-    <Route render={(routerProps) => <Navigation paths={paths} nav={routerProps.location}/>}/>
-    <Switch>
+  return ( 
+    <>
+      <Route render={(routerProps) => <Navigation paths={realPaths} nav={routerProps.location}/>}/>
+      <Switch>
         <Route path='/about'>
           <About/>
         </Route>
-        <Route path='/service'>
-          <Service/>
+        <Route path='/services'>
+          <Services/>
         </Route>
         <Route path='/involve'>
           <Involve/>
@@ -52,7 +54,7 @@ function App() {
           <Home/>
         </Route>
       </Switch>
-    <Footer/>
+      <Footer paths={paths} />
     </>
   );
 }

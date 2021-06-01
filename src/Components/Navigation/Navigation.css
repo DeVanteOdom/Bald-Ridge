@@ -1,3 +1,86 @@
-.nav > * {
-    margin: 0 1rem;
+/* Px width 360px and up */
+.nav {
+    position: fixed;
+    z-index: 7;
+    display: flex;
+    justify-content: space-evenly;
+    width: 70vw;
+    margin-left: 30vw;
+}
+.nav > a > img {
+    width: 150px;
+    position: fixed;
+    left: 0;
+    padding: 8px 16px;
+    cursor: pointer;
+}
+.nav > a:not(:first-of-type){
+    display: flex;
+    background-color: white;
+    color: #2B6CA3;
+    text-decoration: none;
+    border: unset;
+    padding: 8px 16px;
+    margin: 0 4px;
+    font-size: small;
+    border-radius: 0 0 10px 10px;
+    cursor: pointer;
+}
+.nav > a:last-child{
+    background-color: #2BA39E;
+    color: white;
+}
+.nav > a:hover {
+    background-color: #cccccc;
+}
+.nav > a:last-child:hover{
+    background-color: #238380;
+}
+@media (min-width: 480px){
+    .nav {
+        position: fixed;
+        z-index: 7;
+        display: flex;
+        justify-content: space-evenly;
+        width: 70vw;
+        margin-left: 30vw;
+    }
+    .nav > a > img {
+        width: 120px;
+        position: fixed;
+        left: 0;
+        padding: 8px 16px;
+        cursor: pointer;
+    }
+    .nav > a:not(:first-of-type){
+        padding: 8px 12px;
+        margin: 0 2px;
+        font-size: small;
+    }
+}
+@media (min-width: 768px){
+    .nav {
+        width: 50vw;
+        margin-left: 50vw;
+    }
+    .nav > a > img {
+        width: 150px;
+    }
+    .nav > a:not(:first-of-type){
+        padding: 8px 16px;
+        margin: 0 4px;
+        font-size: medium;
+    }
+}
+@media (min-width: 1024px){
+    .nav {
+        width: 40vw;
+        margin-left: 60vw;
+    }
+}
+@media (min-width: 1600px){
+    .nav {
+        width: 30vw;
+        margin-left: 70vw;
+    }
 }

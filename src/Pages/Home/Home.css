@@ -1,0 +1,197 @@
+
+.Homepage > section {
+    width: 100vw;
+    padding: 2rem 0;
+    background-color: #2b6ca3;
+    text-align: center;
+}
+.home-description {
+    margin: 0;
+}
+.home-description > iframe {
+    box-shadow: 1px 1px 1px rgba(0,0,0,0.6), 2px 2px 4px rgba(0,0,0,0.3), 4px 4px 6px rgba(0,0,0,0.1);
+    border-radius: 4px;
+    width: auto;
+    height: auto;
+}
+.home-description > p {
+    display: block;
+    text-align: left;
+    max-width: 296px;
+    margin: 2rem auto 0 auto;
+    padding: 3rem 1rem;
+    font-weight: bold;
+    font-size: large;
+    color: white;
+    text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
+    background-color: #2BA39E;
+    box-shadow: 1px 1px 1px rgba(0,0,0,0.6), 2px 2px 4px rgba(0,0,0,0.3), 4px 4px 6px rgba(0,0,0,0.1),
+        inset 1px 1px 1px rgba(255,255,255,0.3), inset 4px 4px 2px rgba(255,255,255,0.1);
+    border-radius: 4px
+}
+.home-beliefs {
+    display: block;
+    text-align: justify;
+    width: 80vw;
+    min-height: 300px;
+    font-weight: bold;
+    color: black;
+    margin: 2rem auto;
+}
+.home-beliefs > h2 {
+    font-size: xxx-large;
+    text-align: center;
+    margin: 0;
+    color: white;
+    text-shadow: 2px 2px 1px rgba(0,0,0,0.9);
+    margin: auto 1rem;
+    width: 100%;
+}
+.home-beliefs > ul {
+    text-align: left;
+    list-style-type:square;
+    padding: 0;
+    list-style-position: unset;
+    margin: auto 1rem;
+    width: 100%;
+}
+.home-beliefs > ul > li {
+    margin: 1rem 0 0 0;
+    font-size: large;
+    color: white;
+    text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
+}
+.parallax-header {
+    position: relative;
+    width: fit-content;
+    margin: 0 auto;
+    text-align: center;
+}
+.parallax-header > h1 {
+    /*       100%   100vh   100vw    */
+    margin: 20vh 2rem;
+    color: white;
+    font-size: xxx-large;
+    text-shadow: 2px 2px 1px rgba(0,0,0,0.6), 4px 4px 8px rgba(0,0,0,0.3);
+}
+.parallax-header > a {
+    display: block;
+    font-size: large;
+    margin: 1rem auto;
+    padding: 24px 0;
+    text-decoration: unset;
+    border-radius: 10px;
+    border: unset;
+    box-shadow: 1px 1px 1px rgba(0,0,0,0.6), 2px 2px 4px rgba(0,0,0,0.3);
+    cursor: pointer;
+    font-weight: bold;
+    width: 150px;
+    border: 3px solid #2b6ca3;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.6);
+    transition: .33s background-color;
+}
+.parallax-header > a {
+    background-color: #2b6ca366;
+    color: white;
+}
+.parallax-header > a:last-child{
+    background-color: #2BA39E;
+    border: 3px solid #2BA39E;
+    color: white;
+    
+}
+.parallax-header > a:hover {
+    /*    0 1 2 3 4 5 6 7 8 9 a b c d e f   #rrggbbaa   #ffffff             */
+    background-color: #2b6ca3;
+}
+.parallax-header > a:last-child:hover {
+    /*    0 1 2 3 4 5 6 7 8 9 a b c d e f   #rrggbbaa   #ffffff             */
+    background-color: #2BA39E66;
+    border: 3px solid #2BA39E;
+}
+@media (min-width: 480px){
+    .parallax-header > a {
+        display: inline-block;
+        margin: 0 1rem;
+    }
+    .home-description > iframe {
+        width: 400px;
+        height: 220px;
+    }
+    .home-description > p {
+        max-width: 336px;
+        margin: 2rem auto 0 auto;
+        padding: 3rem 2rem;
+        font-size: large;
+    }
+}
+@media (min-width: 768px){
+    .home-description > iframe {
+        width: 600px;
+        height: 340px;
+    }
+    .home-description > p {
+        max-width: 536px;
+        margin: 4rem auto 0 auto;
+        padding: 3rem 2rem;
+        font-size: larger;
+    }
+    .home-beliefs {
+        display: flex;
+        width: 80vw;
+        min-height: 300px;
+        margin: 4rem auto;
+    }
+    .home-beliefs > h2 {
+        margin: auto 1rem;
+        width: 25%;
+    }
+    .home-beliefs > ul {
+        margin: auto 3rem;
+        width: 75%;
+    }
+}
+@media (min-width: 1024px){
+    .Homepage > section {
+        display: flex;
+        justify-content: center;
+    }
+    .home-description {
+        margin: 0 1rem;
+        width: 50%;
+    }
+    .home-description > iframe {
+        width: 500px;
+        height: 290px;
+    }
+    .home-description > p {
+        max-width: 436px;
+        margin: 2rem auto 0 auto;
+        padding: 3rem 2rem;
+        font-size: larger;
+        display: block;
+    }
+    .home-beliefs {
+        display: block;
+        width: 50%;
+        min-height: 300px;
+        margin: 4rem 0;
+    }
+    .home-beliefs > h2 {
+        margin: auto 1rem;
+        width: 75%;
+    }
+    .home-beliefs > ul {
+        margin: auto 3rem;
+        width: 75%;
+    }
+}
+@media (min-width: 1600px){
+    .home-description > iframe {
+        width: 640px;
+        height: 360px;
+    }
+    .home-description > p {
+        max-width: 576px;
+    }
+}
