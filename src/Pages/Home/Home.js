@@ -26,7 +26,7 @@ class Home extends Component {
                 </ParallaxBanner> 
                 <section>
                     <div className='home-description'> 
-                        <iframe src="https://player.vimeo.com/video/366591890" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+                        <iframe src="https://player.vimeo.com/video/366591890" title={"Vimeo Video"} width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
                         <p>{this.state.description}</p>
                     </div>
                     <div className='home-beliefs'>

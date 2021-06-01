@@ -1,0 +1,12 @@
+footer {
+    text-align: center;
+    min-height: 68px;
+    background-color: #255e93;
+    padding: 2rem 0 0 0;
+}
+footer > a {
+    margin: auto 1rem auto 0;
+    text-decoration: unset;
+    color: black;
+    display: inline;
+}

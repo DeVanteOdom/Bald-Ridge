@@ -1,0 +1,44 @@
+.board-of-directors {
+    background-color: #2b6ca3;
+    text-align: center;
+    padding: 4rem 2rem;
+}
+.board-of-directors .bod-obj > div {
+    background-color: #2BA39E;
+    box-shadow: 1px 1px 1px rgba(0,0,0,0.6), 2px 2px 4px rgba(0,0,0,0.3),
+        inset 1px 1px 1px rgba(255,255,255,0.6), inset 2px 2px 4px rgba(255,255,255, 0.3);
+    border-radius: 0 4px 4px 4px ;
+    padding: 1rem;
+    margin: 1rem;
+    color: white;
+}
+.board-of-directors .bod-obj > div:first-of-type {
+    display: flex;
+    margin-bottom: -1.75rem;
+    position: relative;
+    z-index: 1;
+    width: fit-content;
+    border-radius: 4px 4px 0 0;
+    box-shadow: inset 1px 1px 1px rgba(255,255,255,0.6), inset 2px 2px 4px rgba(255,255,255, 0.3);
+}
+.board-of-directors .bod-obj img {
+     border-radius: 100%;
+    box-shadow: 1px 1px 1px rgba(0,0,0,0.6), 2px 2px 4px rgba(0,0,0,0.3);
+    height: 100px;
+ }
+.board-of-directors .bod-obj h2 {
+    font-size: xx-large;
+    padding: 0 2rem;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.6)
+}
+.board-of-directors .bod-obj h4 {
+    font-size: large;
+    margin: 0;
+    text-align: left;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.6)
+}
+.board-of-directors .bod-obj p {
+    font-size: large;
+    margin: .5rem 0 1rem 0;
+    text-align: left;
+}

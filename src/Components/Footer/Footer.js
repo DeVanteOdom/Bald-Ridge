@@ -14,10 +14,10 @@ class Footer extends Component {
         }
     }
     render() {
-        return <div className='Footer'> 
+        return <footer>
         {this.state.paths && this.state.paths.map((path,i)=> <Link to={'/'+path.to}>{path.name}</Link>)} 
         
-        </div>
+        </footer>
     }
 }
 
