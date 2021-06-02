@@ -2,24 +2,26 @@
     background-color: #2b6ca3;
     text-align: center;
     padding: 4rem 2rem;
+    display: block;
 }
-.board-of-directors .bod-obj > div {
+.board-of-directors .bod-obj {
     background-color: #2BA39E;
     box-shadow: 1px 1px 1px rgba(0,0,0,0.6), 2px 2px 4px rgba(0,0,0,0.3),
-        inset 1px 1px 1px rgba(255,255,255,0.6), inset 2px 2px 4px rgba(255,255,255, 0.3);
+    inset 1px 1px 1px rgba(255,255,255,0.6), inset 2px 2px 4px rgba(255,255,255, 0.3);
     border-radius: 0 4px 4px 4px ;
     padding: 1rem;
     margin: 1rem;
+    display: inline-block;
+}
+.board-of-directors .bod-obj > div {
+    display: block;
     color: white;
 }
 .board-of-directors .bod-obj > div:first-of-type {
     display: flex;
-    margin-bottom: -1.75rem;
     position: relative;
     z-index: 1;
     width: fit-content;
-    border-radius: 4px 4px 0 0;
-    box-shadow: inset 1px 1px 1px rgba(255,255,255,0.6), inset 2px 2px 4px rgba(255,255,255, 0.3);
 }
 .board-of-directors .bod-obj img {
      border-radius: 100%;
@@ -42,3 +44,11 @@
     margin: .5rem 0 1rem 0;
     text-align: left;
 }
+/*.board-of-directors .bod-obj div:last-of-type {*/
+/*    transform: scale3d(0,0,0);*/
+/*    overflow: hidden;*/
+/*    transition: transform 2s;*/
+/*}*/
+/*.board-of-directors .bod-obj:hover > div:last-of-type {*/
+/*    transform: scale3d(1,1,1);*/
+/*}*/

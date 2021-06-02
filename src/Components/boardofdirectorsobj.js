@@ -26,10 +26,10 @@ class BoardofDirectorsObj extends Component {
                     <h2>{this.props.name}</h2>
                 </div>
                 <div>
-                {this.state.answers.map((answer, i) => <div key={"questions"+this.props.name+i}>
-                    <h4>{this.props.questions[i]}</h4>
-                    <p>{answer}</p>
-                </div>)}
+                    {this.state.answers.map((answer, i) => <div key={"questions"+this.props.name+i}>
+                        <h4>{this.props.questions[i]}</h4>
+                        <p>{answer}</p>
+                    </div>)}
                 </div>
             </div>
         );
