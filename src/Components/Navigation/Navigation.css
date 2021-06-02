@@ -4,8 +4,9 @@
     z-index: 7;
     display: flex;
     justify-content: space-evenly;
-    width: 70vw;
-    margin-left: 30vw;
+    width: 100vw;
+    margin-left: 0;
+    background-color: white;
 }
 .nav > a > img {
     width: 150px;
@@ -14,16 +15,16 @@
     padding: 8px 16px;
     cursor: pointer;
 }
-.nav > a:not(:first-of-type){
+.nav > a{
     display: flex;
     background-color: white;
     color: #2B6CA3;
     text-decoration: none;
     border: unset;
-    padding: 8px 16px;
-    margin: 0 4px;
+    padding: 8px;
+    margin: 0 2px;
     font-size: small;
-    border-radius: 0 0 10px 10px;
+    border-radius: 0;
     cursor: pointer;
 }
 .nav > a:last-child{
@@ -44,6 +45,7 @@
         justify-content: space-evenly;
         width: 70vw;
         margin-left: 30vw;
+        background-color: unset;
     }
     .nav > a > img {
         width: 120px;
@@ -52,10 +54,16 @@
         padding: 8px 16px;
         cursor: pointer;
     }
+    .nav > a:first-of-type{
+        background-color: unset;
+        padding: 0;
+        margin: 0;
+        border-radius: 0;
+    }
     .nav > a:not(:first-of-type){
-        padding: 8px 12px;
+        padding: 8px 16px;
         margin: 0 2px;
-        font-size: small;
+        border-radius: 0 0 10px 10px;
     }
 }
 @media (min-width: 768px){
