@@ -3,6 +3,10 @@
     text-align: center;
     padding: 4rem 2rem;
     display: block;
+    
+}
+.board-of-directors > div {
+    display: flex;
 }
 .board-of-directors .bod-obj {
     background-color: #2BA39E;
@@ -12,6 +16,7 @@
     padding: 1rem;
     margin: 1rem;
     display: inline-block;
+    width: 49vw;
 }
 .board-of-directors .bod-obj > div {
     display: block;
@@ -44,11 +49,11 @@
     margin: .5rem 0 1rem 0;
     text-align: left;
 }
-/*.board-of-directors .bod-obj div:last-of-type {*/
-/*    transform: scale3d(0,0,0);*/
-/*    overflow: hidden;*/
-/*    transition: transform 2s;*/
-/*}*/
-/*.board-of-directors .bod-obj:hover > div:last-of-type {*/
-/*    transform: scale3d(1,1,1);*/
-/*}*/
+.board-of-directors .bod-obj > div:last-of-type {
+    height: 0;
+    overflow: hidden;
+    transition: height 2s;
+}
+.board-of-directors .bod-obj:hover > div:last-of-type {
+  height: 100%;
+}

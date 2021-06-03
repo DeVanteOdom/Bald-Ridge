@@ -3,7 +3,7 @@ footer {
     min-height: 68px;
     background-color: #255e93;
     padding: 2rem 0 0 0;
-    width: 100vw;
+    width: 100%;
     overflow: scroll;
 }
 footer > a {

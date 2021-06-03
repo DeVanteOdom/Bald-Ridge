@@ -174,8 +174,10 @@ class BoardOfDirectors extends Component {
             {this.state.DATA.map((obj, i) =>
                 <BoardofDirectorsObj key={'b-o-d'+i} name={obj.name} src={obj.profilePic} answers={obj.answers} questions={this.state.questions}/>)}
             <h1>{this.state.header2}</h1>
-            {this.state.DATAB.map((obj, i) =>
-                <BoardofDirectorsObj key={'b-o-d2'+i} name={obj.name} src={obj.profilePic} answers={obj.answers} questions={this.state.questions}/>)}
+            <div>
+                {this.state.DATAB.map((obj, i) =>
+                    <BoardofDirectorsObj key={'b-o-d2'+i} name={obj.name} src={obj.profilePic} answers={obj.answers} questions={this.state.questions}/>)}
+            </div>
         </div>
     }
 }
