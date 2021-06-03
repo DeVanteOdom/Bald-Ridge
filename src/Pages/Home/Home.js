@@ -7,7 +7,7 @@ class Home extends Component {
     constructor(props) {
         super(props);
         this.state = { 
-            header: "Providing a pathway for foster youth in GA",
+            header: "Providing A Pathway For Foster Youth In GA",
             description: "The Bald Ridge Lodge is a nurturing, home-like stabilization facility where young men learn the skills they need to be successful in life.  The boys who come and stay at The Lodge leave with the knowledge and confidence they need to excel in life.",
             beliefHeader: "Our Beliefs",
             beliefs: [ "We believe that providing a safe, and nurturing home-like environment is essential to the care and wellbeing of our boys.","We believe that we can change lives.", "We believe in the power of bringing the resources of the community together.", "We believe it is a privilege to work with, and on behalf of, our youth. "]

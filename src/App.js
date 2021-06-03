@@ -32,27 +32,35 @@ function App() {
         <Route path='/about'>
           <About/>
         </Route>
+
         <Route path='/services'>
           <Services/>
         </Route>
+
         <Route path='/involve'>
           <Involve/>
         </Route>
+
         <Route path='/contact'>
           <Contact/>
         </Route>
+
         <Route path='/boardofdirectors'>
           <BoardOfDirectors/>
         </Route>
+
         <Route path='/staff'>
           <Staff/>
         </Route>
+
         <Route path='/partners'>
           <Partners/>
         </Route>
+
         <Route path='/'>
           <Home/>
         </Route>
+        
       </Switch>
       <Footer paths={paths} />
     </>
