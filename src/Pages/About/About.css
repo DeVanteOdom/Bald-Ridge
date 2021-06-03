@@ -1,0 +1,50 @@
+.parallax-about {
+    position: relative;
+    width: fit-content;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.parallax-about > h1 {
+    /*       100%   100vh   100vw    */
+    margin: 20vh 2rem;
+    color: white;
+    font-size: xxx-large;
+    text-shadow: 2px 2px 1px rgba(0,0,0,0.6), 4px 4px 8px rgba(0,0,0,0.3);
+    font-weight: bold;
+    padding: 1rem;
+}
+
+.parallax-about > p {
+    /*       100%   100vh   100vw    */
+    margin: 20vh 2rem;
+    color: white;
+    font-size: xx-large;
+    text-shadow: 2px 2px 1px rgba(0,0,0,0.6), 4px 4px 8px rgba(0,0,0,0.3);
+    font-weight: bold;
+}
+
+.Aboutpage > .text {
+    width: 100vw;
+    padding: 2rem 0;
+    background-color: #2b6ca3;
+    text-align: center;
+}
+
+.row {
+    display: flex;
+}
+
+.our-mission {
+    float: left;
+    width: 50%;
+    padding: 10px;
+    height: 300px;
+}
+
+.our-vision {
+    float:left;
+    width: 50%;
+    padding: 10px;
+    height: 300px;
+}

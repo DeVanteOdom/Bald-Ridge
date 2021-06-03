@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import "./Navigation.css"
 import logo from "../../assets/logo/logo.png"
 export const Navigation = ({paths, nav}) => 
+
 <nav className="nav">
     <Link to="/">
         {window.screen.width > 480 ? <img src={logo} title={"Goto Home Page"} alt={'Home'}/> : "Home"}
