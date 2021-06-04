@@ -1,12 +1,42 @@
 .board-of-directors {
     background-color: #2b6ca3;
     text-align: center;
-    padding: 4rem 2rem;
+    padding: 0;
     display: block;
     
 }
+.board-of-directors h1 {
+    color: white;
+    text-shadow: 2px 2px 1px rgba(0,0,0,0.6), 4px 4px 4px rgba(0,0,0,0.3);
+}
 .board-of-directors > div {
     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    overflow: hidden;
+    justify-content: space-evenly;
+}
+.board-of-directors .bod-header {
+    position: relative;
+    margin: 0 auto 2rem auto;
+    text-align: center;
+}
+.board-of-directors .bod-header > h1 {
+    margin: 20vh auto 0 auto;
+    display: block;
+    font-size: xx-large;
+    width: 100%;
+    z-index: 1;
+    
+}
+.board-of-directors .bod-header > p {
+    color: white;
+    font-size: large;
+    display: block;
+    width: 70vw;
+    margin: 0 auto;
+    z-index: 1;
+    text-shadow: 2px 2px 1px rgba(0,0,0,0.6), 4px 4px 8px rgba(0,0,0,0.3);
 }
 .board-of-directors .bod-obj {
     background-color: #2BA39E;
@@ -16,7 +46,8 @@
     padding: 1rem;
     margin: 1rem;
     display: inline-block;
-    width: 49vw;
+    width: 40vw;
+    height: min-content;
 }
 .board-of-directors .bod-obj > div {
     display: block;
@@ -29,10 +60,10 @@
     width: fit-content;
 }
 .board-of-directors .bod-obj img {
-     border-radius: 100%;
+    border-radius: 100%;
     box-shadow: 1px 1px 1px rgba(0,0,0,0.6), 2px 2px 4px rgba(0,0,0,0.3);
     height: 100px;
- }
+}
 .board-of-directors .bod-obj h2 {
     font-size: xx-large;
     padding: 0 2rem;
@@ -50,10 +81,10 @@
     text-align: left;
 }
 .board-of-directors .bod-obj > div:last-of-type {
-    height: 0;
+    max-height: 0;
     overflow: hidden;
-    transition: height 2s;
+    transition: max-height 2s 0.25s;
 }
 .board-of-directors .bod-obj:hover > div:last-of-type {
-  height: 100%;
+  max-height: 1000px;
 }
