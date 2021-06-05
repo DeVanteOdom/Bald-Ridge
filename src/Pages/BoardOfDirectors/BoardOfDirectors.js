@@ -74,7 +74,7 @@ class BoardOfDirectors extends Component {
                     "The biggest lesson I have learned during my time on the board is that service can change your community.  I look forward to learning and growing as a person through service."]},{
                 profilePic: jennifergarner,
                 name: "Jennifer Garner",
-                answers: ["Education.  I have been an educator in the Forsyth County School System for25years, all of that time in the Forsyth Central cluster schools of Otwell Middle and ForsythCentral High School.  ",
+                answers: ["Education.  I have been an educator in the Forsyth County School System for 25 years, all of that time in the Forsyth Central cluster schools of Otwell Middle and Forsyth Central High School.  ",
                     "Working with and for kids",
                     "As a new board member, I hope to impact the lives of the young men in our community.  I am\n" +
                     "looking forward to working with a group of people dedicated to providing the best care and\n" +
