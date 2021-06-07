@@ -1,0 +1,62 @@
+.contact {
+    background-color: #2b6ca3;
+    text-align: center;
+    padding: 0;
+    display: block;
+    height: 100vh;
+
+}
+.contact-parallaxing  > h1 {
+    margin: 10vh 0 0 0;
+    z-index: 1;
+    position: relative;
+    color: white;
+    font-size: xxx-large;
+    text-shadow: 2px 2px 1px rgba(0,0,0,0.6), 4px 4px 8px rgba(0,0,0,0.3);
+}
+.contact-parallaxing  > p {
+    margin: 1rem 0 0 0;
+    z-index: 1;
+    position: relative;
+    color: white;
+    font-size: large;
+    text-shadow: 2px 2px 1px rgba(0,0,0,0.6), 4px 4px 8px rgba(0,0,0,0.3);
+}
+.contact-card {
+    background-color: #2BA39E;
+    box-shadow: 1px 1px 1px rgba(0,0,0,0.6), 2px 2px 4px rgba(0,0,0,0.3),
+    inset 1px 1px 1px rgba(255,255,255,0.6), inset 2px 2px 4px rgba(255,255,255, 0.3);
+    border-radius: 4px;
+    padding: 1rem;
+    width: fit-content;
+    margin: 2rem auto 0 auto;
+}
+.contact-card > button {
+    display: block;
+    font-size: large;
+    margin: 1rem auto;
+    padding: 16px 0;
+    text-decoration: unset;
+    border-radius: 10px;
+    border: unset;
+    box-shadow: 1px 1px 1px rgba(0,0,0,0.6), 2px 2px 4px rgba(0,0,0,0.3);
+    cursor: pointer;
+    font-weight: bold;
+    width: 100px;
+    border: 3px solid #2b6ca3;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.6);
+    background-color: #2b6ca3;
+    transition: .33s background-color;
+}
+.contact-card > p{
+    margin: 0 0 1rem 0;
+}
+.contact-email {
+    display: block;
+    padding-top: 1rem;
+}
+
+.contact-email > * {
+    display: block;
+    width: 100%;
+}
