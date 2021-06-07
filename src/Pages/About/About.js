@@ -54,8 +54,8 @@ class About extends Component {
         <section className='family'>
                 <h1>{this.state.family}</h1>
                 <div className="links">
-                <Link to='/boardofdirectors'>Board Of Directors</Link>
                 <Link to='/staff'>Staff</Link>
+                <Link to='/boardofdirectors'>Board Of Directors</Link>
                 <Link to='/partners'>Partners</Link>
             </div>
         </section>
